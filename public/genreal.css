@@ -8,3 +8,8 @@ p {
   font-family: Helvetica, sans-serif;
   color: #1c2730;
 }
+
+main {
+  max-width: 550px;
+  margin: auto;
+}
