@@ -5,6 +5,7 @@ import Broderi from "../componets/Broderi.astro";
 import Repair from "../componets/Repair.astro";
 import Processen from "../componets/Processen.astro";
 import Genbrug from "../componets/Genbrug.astro";
+import Scrollindicator from "../componets/Scrollindicator.astro";
 ---
 
 <html lang="da">
@@ -16,8 +17,10 @@ import Genbrug from "../componets/Genbrug.astro";
     <link rel="stylesheet" href="/genreal.css" />
     <title>I Tråd Med Verden</title>
   </head>
+
   <body>
     <main>
+      <Scrollindicator />
       <Genbrug />
       <Slider />
       <Processen />
@@ -29,4 +32,10 @@ import Genbrug from "../componets/Genbrug.astro";
   <Footer />
 </html>
 
-<style></style>
+<style>
+  main {
+    padding: 0 20px 0 35px;
+  }
+  @media (min-width: 800px) {
+  }
+</style>
