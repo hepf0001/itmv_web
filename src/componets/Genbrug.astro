@@ -2,19 +2,51 @@
 
 ---
 
-<img class="woman" src="/public/Img/img_svg/woman.svg" alt="Woman" />
+<div class="col">
+  <div class="woman_col">
+    <img class="woman" src="/public/Img/foerste_section.svg" alt="Woman" />
+  </div>
 
-<h1>I tråd med Genbrug</h1>
-<p>
-  I vores rejse mod en mere bæredygtig fremtid hos I Tråd Med Verden, tror vi på kraften af samarbejde og genanvendelse. Vores samarbejde med KAB er ikke kun et partnerskab; det er et symbol på vores engagement i at skabe meningsfulde forandringer. Ved at genanvende tekstiler fra virksomheder i København og omegn viser vi ikke blot vores dedikation
-  til bæredygtighed, men også vores evne til at forvandle ressourcer til nye muligheder.
-</p>
-<p>
-  Vi er mere end bare en virksomhed - vi er en bevægelse, der driver sociale, økonomiske og miljømæssige forandringer lokalt. Gennem vores arbejde ønsker vi ikke kun at reducere tekstil affald, men også at skabe jobmuligheder og styrke fællesskaber. Ved at bygge bro mellem virksomheder, lokalsamfund og vores eget håndværk, træder vi sammen mod en
-  fremtid, der er bæredygtig for os alle.
-</p>
+  <div class="stof_col">
+    <h1>I tråd med Genbrug</h1>
+    <p>
+      I vores rejse mod en mere bæredygtig fremtid hos I Tråd Med Verden, tror
+      vi på kraften af samarbejde og genanvendelse. Vores samarbejde med KAB er
+      ikke kun et partnerskab; det er et symbol på vores engagement i at skabe
+      meningsfulde forandringer. Ved at genanvende tekstiler fra virksomheder i
+      København og omegn viser vi ikke blot vores dedikation til bæredygtighed,
+      men også vores evne til at forvandle ressourcer til nye muligheder.
+    </p>
+    <p>
+      Vi er mere end bare en virksomhed - vi er en bevægelse, der driver
+      sociale, økonomiske og miljømæssige forandringer lokalt. Gennem vores
+      arbejde ønsker vi ikke kun at reducere tekstil affald, men også at skabe
+      jobmuligheder og styrke fællesskaber. Ved at bygge bro mellem
+      virksomheder, lokalsamfund og vores eget håndværk, træder vi sammen mod en
+      fremtid, der er bæredygtig for os alle.
+    </p>
+  </div>
+</div>
 <style>
+  .col {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 50px;
+  }
   .woman {
-    width: 55%;
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .woman_col {
+  }
+
+  .stof_col {
+    padding-top: auto;
+    background-color: #f0eeea;
+    border: 10px solid #f0eeea;
   }
 </style>
