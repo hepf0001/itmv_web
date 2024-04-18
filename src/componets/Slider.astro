@@ -2,102 +2,105 @@
 //https://codepen.io/sophgdn/pen/pxPmgr
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <div id="window">
-        <div id="slide-container">
-          <div class="slides">
-            <!-- First image -->
-            <img class="slide" src="/public/Img/img_slider/i_trod_med_verden.png" alt="billede1" />
-          </div>
+<div id="window">
+  <div id="slide-container">
+    <div class="slides">
+      <!-- 1 image -->
+      <img class="slide" src="/public/img/img_slider/billede_1.JPG" alt="billede1" />
+    </div>
 
-          <!-- Second image -->
-          <div class="slides">
-            <img class="slide" src="/public/Img/img_slider/itmv.png " alt="billede2" />
-          </div>
+    <!-- 2 image -->
+    <div class="slides">
+      <img class="slide" src="/public/img/img_slider/billede_2.png" alt="billede2" />
+    </div>
 
-          <!-- Third image -->
-          <div class="slides">
-            <img class="slide" src="/public/Img/img_slider/i_trod_med_verden.png" alt="billede3" />
-          </div>
+    <!-- 3 image -->
+    <div class="slides">
+      <img class="slide" src="/public/img/img_slider/billede_3.JPG" alt="billede3" />
+    </div>
 
-          <!-- four image -->
-          <div class="slides">
-            <img class="slide" src="/public/Img/img_slider/itmv.png " alt="billede4" />
-          </div>
-          <a id="previous" class="arrow">&#10094</a>
-          <a id="next" class="arrow">&#10095</a>
-          <div id="text-bar">
-            <p id="place"></p>
-          </div>
-        </div>
-        <div id="dotsContainer"></div>
-      </div>
-    </main>
-    <script>
-      var index = 0;
-      var locations = ["Spring", "Summer", "Autumn", "Winter"];
+    <!-- 4 image -->
+    <div class="slides">
+      <img class="slide" src="/public/img/img_slider/billede_4.JPG" alt="billede4" />
+    </div>
 
-      var slides = document.getElementsByClassName("slides");
-      var nextArrow = document.getElementById("next");
+    <!-- 5 image -->
+    <div class="slides">
+      <img class="slide" src="/public/img/img_slider/billede_5.JPG" alt="billede4" />
+    </div>
+    <!-- 6 image -->
+    <div class="slides">
+      <img class="slide" src="/public/img/img_slider/billede_6.JPG" alt="billede4" />
+    </div>
+    <!-- 7 image -->
+    <div class="slides">
+      <img class="slide" src="/public/img/img_slider/billede_7.JPG" alt="billede4" />
+    </div>
 
-      var previousArrow = document.getElementById("previous");
+    <a id="previous" class="arrow">&#10094</a>
+    <a id="next" class="arrow">&#10095</a>
+    <div id="text-bar">
+      <p id="place"></p>
+    </div>
+  </div>
+  <div id="dotsContainer"></div>
+</div>
 
-      var place = document.getElementById("place");
+<script>
+  var index = 0;
+  var locations = ["Spring", "Summer", "Autumn", "Winter"];
 
-      var dotsContainer = document.getElementById("dotsContainer");
+  var slides = document.getElementsByClassName("slides");
+  var nextArrow = document.getElementById("next");
 
-      var dotArray = document.getElementsByClassName("dots");
+  var previousArrow = document.getElementById("previous");
 
-      createDots();
-      showSlides(index);
+  var place = document.getElementById("place");
 
-      function createDots() {
-        for (i = 0; i < slides.length; i++) {
-          var dot = document.createElement("span");
-          dot.className = "dots";
-          dotsContainer.appendChild(dot);
-        }
-      }
+  var dotsContainer = document.getElementById("dotsContainer");
 
-      function showSlides(x) {
-        if (x > slides.length - 1) {
-          index = 0;
-        }
-        if (x < 0) {
-          index = slides.length - 1;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-          dotArray[i].className = "dots";
-        }
+  var dotArray = document.getElementsByClassName("dots");
 
-        slides[index].style.display = "block";
-        dotArray[index].className += " activeDot";
-        place.innerHTML = locations[index];
-      }
+  createDots();
+  showSlides(index);
 
-      nextArrow.onclick = function () {
-        index += 1;
-        showSlides(index);
-      };
+  function createDots() {
+    for (i = 0; i < slides.length; i++) {
+      var dot = document.createElement("span");
+      dot.className = "dots";
+      dotsContainer.appendChild(dot);
+    }
+  }
 
-      previousArrow.onclick = function () {
-        index -= 1;
-        showSlides(index);
-      };
+  function showSlides(x) {
+    if (x > slides.length - 1) {
+      index = 0;
+    }
+    if (x < 0) {
+      index = slides.length - 1;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      dotArray[i].className = "dots";
+    }
 
-      dotArray[0].onclick = showSlides(1);
-    </script>
-  </body>
-</html>
+    slides[index].style.display = "block";
+    dotArray[index].className += " activeDot";
+    place.innerHTML = locations[index];
+  }
+
+  nextArrow.onclick = function () {
+    index += 1;
+    showSlides(index);
+  };
+
+  previousArrow.onclick = function () {
+    index -= 1;
+    showSlides(index);
+  };
+
+  dotArray[0].onclick = showSlides(1);
+</script>
 
 <style>
   :root {
