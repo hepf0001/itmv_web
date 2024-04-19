@@ -2,22 +2,68 @@
 
 ---
 
-<h1>I tråd med processen</h1>
-<p>
-  Vores produktion er en proces, der handler om mere end blot at skabe
-  tekstiler. Det handler om at skabe fællesskaber og give kvinder muligheder for
-  at blomstre. Som en lokal ressource går vi forrest i at genanvende tekstiler
-  og sprede viden om bæredygtighed. Ved at fokusere på dansk design og
-  bæredygtig tekstilproduktion skaber vi ikke blot produkter, men også en
-  meningsfuld arbejdsplads for dem, der har mistet fodfæste på arbejdsmarkedet.
-</p>
-<p>
-  Vores dedikerede hold af kvinder sikrer ikke kun kvaliteten af vores
-  produkter, men også den positive følelse, der følger med hvert eneste stykke.
-  Fra håndværk til håndtering af materialer i form af plantefarvning og til
-  håndtering af alle typer tekstiler, er vores produktion en ægte laboratorium
-  for bæredygtighed og social ansvarlighed. Hos os er hver tråd en del af et
-  større fællesskab, der arbejder mod en bedre fremtid.
-</p>
+<div class="col">
+  <div class="woman_col">
+    <div class="woman_sprite"></div>
+  </div>
 
-<style></style>
+  <div class="stof_col">
+    <h1>I tråd med processen</h1>
+    <p>
+      Vores produktion er en proces, der handler om mere end blot at skabe tekstiler. Det handler om at skabe fællesskaber og give kvinder muligheder for at blomstre. Som en lokal ressource går vi forrest i at genanvende tekstiler og sprede viden om bæredygtighed. Ved at fokusere på dansk design og bæredygtig tekstilproduktion skaber vi ikke blot
+      produkter, men også en meningsfuld arbejdsplads for dem, der har mistet fodfæste på arbejdsmarkedet.
+    </p>
+    <p>
+      Vores dedikerede hold af kvinder sikrer ikke kun kvaliteten af vores produkter, men også den positive følelse, der følger med hvert eneste stykke. Fra håndværk til håndtering af materialer i form af plantefarvning og til håndtering af alle typer tekstiler, er vores produktion en ægte laboratorium for bæredygtighed og social ansvarlighed. Hos
+      os er hver tråd en del af et større fællesskab, der arbejder mod en bedre fremtid.
+    </p>
+  </div>
+</div>
+
+<style>
+  .col {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    padding-bottom: 100px;
+  }
+  .woman_col {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .woman_sprite {
+    background-image: url("/public/Img/stof_i_lag.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .stof_col {
+    z-index: 1;
+    padding: 20px;
+  }
+
+  @media (min-width: 700px) {
+    .woman_sprite {
+      background-image: url("/public/Img/stof_i_lag.svg");
+      background-image: contain;
+      height: 105%;
+    }
+    .col {
+      height: 105vh;
+    }
+  }
+
+  @media (max-width: 376px) {
+    .col {
+      height: 115vh;
+    }
+
+    .woman_sprite {
+      height: 100%;
+    }
+  }
+</style>
