@@ -4,7 +4,7 @@
 
 <div class="col">
   <div class="woman_col">
-    <img class="woman" src="/public/Img/foerste_section.svg" alt="Woman" />
+    <div class="woman_sprite"></div>
   </div>
 
   <div class="stof_col">
@@ -29,24 +29,47 @@
 </div>
 <style>
   .col {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    padding-bottom: 100px;
   }
-  .woman {
-    width: 100%;
-
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
   .woman_col {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .woman_sprite {
+    background-image: url("/public/Img/foerste_section_800.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
   }
 
   .stof_col {
-    padding-top: auto;
-    background-color: #f0eeea;
-    border: 10px solid #f0eeea;
+    z-index: 1;
+    padding: 20px;
+  }
+
+  @media (min-width: 700px) {
+    .woman_sprite {
+      background-image: url("/public/Img/foerste_section.svg");
+      height: 95%;
+    }
+    .col {
+      height: 85vh;
+    }
+  }
+
+  @media (max-width: 376px) {
+    .col {
+      height: 125vh;
+    }
+
+    .woman_sprite {
+      height: 130%;
+    }
   }
 </style>
