@@ -32,9 +32,31 @@ import ScrollIndicator from "../componets/ScrollIndicator.astro";
 </html>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #3e5c6d;
+  }
+
+  p {
+    font-family: Helvetica, sans-serif;
+    color: #1c2730;
+  }
+
   main {
     padding: 0 20px 0 35px;
   }
   @media (min-width: 800px) {
+    main {
+      padding: 0;
+      max-width: 550px;
+      margin: auto;
+    }
   }
 </style>
