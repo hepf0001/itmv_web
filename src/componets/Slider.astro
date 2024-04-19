@@ -69,7 +69,7 @@
   showSlides(index);
 
   function createDots() {
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
       var dot = document.createElement("span");
       dot.className = "dots";
       dotsContainer.appendChild(dot);
@@ -83,7 +83,7 @@
     if (x < 0) {
       index = slides.length - 1;
     }
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
       dotArray[i].className = "dots";
     }
@@ -130,7 +130,7 @@
   }
 
   /* Style of arrows */
-  .arrow {
+  /*.arrow {
     color: white;
     font-size: 26px;
     position: absolute;
@@ -144,6 +144,24 @@
   .arrow:hover {
     cursor: pointer;
     background-color: var(--transparent-grey);
+  }*/
+
+  .arrow {
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0); /* Ændret til transparent baggrund */
+    transition: background-color 0.3s ease;
+    background-color: var(--transparent-grey);
+  }
+
+  /* Fjerner hover-effekten */
+  .arrow:hover {
+    cursor: pointer;
+    /* Fjern baggrundsfarven */
   }
 
   #next {
