@@ -2,12 +2,8 @@
 
 ---
 
-<div class="col">
-  <div class="woman_col">
-    <div class="woman_sprite"></div>
-  </div>
-
-  <div class="stof_col">
+<div class="baggrund" style="background-image: url('/public/Img/img_svg/stof_i_lag.svg'); background-size: cover; background-position: center;">
+  <div>
     <h1>I tråd med processen</h1>
     <p>
       Vores produktion er en proces, der handler om mere end blot at skabe tekstiler. Det handler om at skabe fællesskaber og give kvinder muligheder for at blomstre. Som en lokal ressource går vi forrest i at genanvende tekstiler og sprede viden om bæredygtighed. Ved at fokusere på dansk design og bæredygtig tekstilproduktion skaber vi ikke blot
@@ -21,49 +17,35 @@
 </div>
 
 <style>
-  .col {
-    display: flex;
-    align-items: flex-end;
-    height: 100vh;
-    padding-bottom: 100px;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  .woman_col {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-  .woman_sprite {
-    background-image: url("/public/Img/stof_i_lag.svg");
+
+  /* Container til at placere tekst oven på baggrundsbillede */
+  .baggrund {
+    background-image: url("/public/Img/img_svg/stof_i_lag.svg");
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-position: center;
+    position: relative;
+    height: 100vh; /* Gør containeren 100% af viewportens højde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Tekstfarve */
   }
 
-  .stof_col {
-    z-index: 1;
-    padding: 20px;
+  /* Styling for tekst */
+  h1,
+  p {
+    padding-bottom: 20px; /* Afstand mellem overskrift og afsnit */
   }
 
-  @media (min-width: 700px) {
-    .woman_sprite {
-      background-image: url("/public/Img/stof_i_lag.svg");
-      background-image: contain;
-      height: 105%;
-    }
-    .col {
-      height: 105vh;
-    }
-  }
-
-  @media (max-width: 376px) {
-    .col {
-      height: 115vh;
-    }
-
-    .woman_sprite {
-      height: 100%;
+  @media (min-width: 800px) {
+    .baggrund img {
+      height: auto; /* Tilpasse containerens højde efter indhold */
+      min-height: 100vh; /* Minimum højde på 100vh */
     }
   }
 </style>
