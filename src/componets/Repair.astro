@@ -4,25 +4,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 ---
 
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".saks", // hvilke objekt scrolltrigger skal trigger
-      start: "top 80%",
-      end: "bottom end",
-      scrub: true,
-      markers: true, // sætte mærker for at se hvor animationer starter og slutter
-    },
-  });
-
-  tl.from(".saks", {
-    x: 800,
-    rotation: 40,
-  });
-</script>
-
 <div class="saks_container"><div class="saks"></div></div>
 <div class="col">
   <div class="woman_col">
@@ -59,6 +40,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
     </div>
   </div>
 </div>
+
+<div class="saks_container bund"><div class="saks"></div></div>
+
 <style>
   .saks_container {
     width: 200px;
@@ -72,6 +56,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
     background-repeat: no-repeat;
 
     background-image: url("../../public/Img/img_svg/saks.svg");
+  }
+
+  .bund {
+    position: absolute;
+    bottom: 50%;
   }
 
   img {
