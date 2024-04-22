@@ -17,20 +17,33 @@
   </div>
 </div>-->
 <div class="col">
-  <div class="woman_col">
-    <div class="woman_sprite">
+  <div class="background_container">
+    <div class="background_sprite">
       <div class="stof_col">
         <h1>I tråd med processen</h1>
         <p>
-          Vores produktion er en proces, der handler om mere end blot at skabe tekstiler. Det handler om at skabe fællesskaber og give kvinder muligheder for at blomstre.
+          Vores produktion er en proces, der handler om mere end blot at skabe
+          tekstiler. Det handler om at skabe fællesskaber og give kvinder
+          muligheder for at blomstre.
           <br /><br />
-          Som en lokal ressource går vi forrest i at genanvende tekstiler og sprede viden om bæredygtighed. Ved at fokusere på dansk design og bæredygtig tekstilproduktion skaber vi ikke blot produkter, men også en meningsfuld arbejdsplads for dem, der har mistet fodfæste på arbejdsmarkedet.
+          Som en lokal ressource går vi forrest i at genanvende tekstiler og sprede
+          viden om bæredygtighed. Ved at fokusere på dansk design og bæredygtig tekstilproduktion
+          skaber vi ikke blot produkter, men også en meningsfuld arbejdsplads for
+          dem, der har mistet fodfæste på arbejdsmarkedet.
         </p>
         <p>
-          Vores dedikerede hold af kvinder sikrer ikke kun kvaliteten af vores produkter, men også den positive følelse, der følger med hvert eneste stykke.
+          Vores dedikerede hold af kvinder sikrer ikke kun kvaliteten af vores
+          produkter, men også den positive følelse, der følger med hvert eneste
+          stykke.
           <br /><br />
-          Fra håndværk til håndtering af materialer i form af plantefarvning og til håndtering af alle typer tekstiler, er vores produktion en ægte laboratorium for bæredygtighed og social ansvarlighed. Hos os er hver tråd en del af et større fællesskab, der arbejder mod en bedre fremtid.
+          Fra håndværk til håndtering af materialer i form af plantefarvning og til
+          håndtering af alle typer tekstiler, er vores produktion en ægte laboratorium
+          for bæredygtighed og social ansvarlighed. Hos os er hver tråd en del af
+          et større fællesskab, der arbejder mod en bedre fremtid.
         </p>
+        <div class="naalepude_container">
+          <div class="naalepude"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -43,40 +56,55 @@
     height: 125vh;
     position: relative;
   }
-  .woman_col {
+  .background_container {
     width: 100%;
-    height: 120%;
+    height: 75%;
     position: absolute;
     top: 0;
     left: 0;
   }
-  .woman_sprite {
+  .background_sprite {
     background-image: url("/public/Img/flere_stof_mobil.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 85%;
+    position: relative;
   }
 
+  .naalepude_container {
+    height: 100%;
+  }
+
+  .naalepude {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18%;
+    height: 15%;
+    background-image: url(../../public/Img/img_svg/naalepude.svg);
+  }
   .stof_col {
     height: 100%;
     padding: 1px 55px;
   }
 
   @media (min-width: 800px) {
-    .woman_sprite {
+    .background_sprite {
       background-image: url("/public/Img/flere_stof.svg");
-      width: 95%;
+      width: 100%;
       height: 100%;
     }
 
     .stof_col {
       height: 100%;
-      padding: 5px 125px;
+      padding: 40px 120px 0 120px;
     }
 
     .col {
-      height: 100vh;
+      height: 110vh;
     }
   }
 </style>
