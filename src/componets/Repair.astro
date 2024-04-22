@@ -7,15 +7,45 @@ import Buttons from "/src/componets/Buttons.astro";
   <div class="woman_col">
     <div class="woman_sprite">
       <div class="stof_col">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UkWfnKbGLg4?si=BYpnJ10WfIA4B-1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UkWfnKbGLg4?si=BYpnJ10WfIA4B-1_"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
 
         <h1>Repair Service</h1>
-        <p>Vidste du, at I Tråd Med Verden tilbyder en praktisk Repair Service, direkte til din virksomhed? Vi brænder for at gøre det så nemt som muligt for dine medarbejdere at deltage i bæredygtighedsarbejdet og socialt ansvar, samtidig med at vi giver jeres tøj nyt liv og længere levetid.</p>
-        <p>Vores dygtige team, bestående af to erfarne syersker og en kreativ designer, som står klar til at hjælpe med alt fra reparation og tilpasning til fornyelse af tøj. Vi tilbyder en bred vifte af services, herunder oplægning, lynlåsreparation, lappning af huller og broderi.</p>
-        <p>Vi bringer vores let tilgængelige service direkte til din virksomhed i Københavnsområdet. Sammen kan vi finde den perfekte dag, der passer til jeres kalender, hvor I kan aflevere tøjet om morgenen. Vi lægger stor vægt på kvalitet og omhu i vores arbejde og stræber altid efter at fuldføre reparationerne inden dagen er omme.</p>
+        <p>
+          Vidste du, at I Tråd Med Verden tilbyder en praktisk Repair Service,
+          direkte til din virksomhed? Vi brænder for at gøre det så nemt som
+          muligt for dine medarbejdere at deltage i bæredygtighedsarbejdet og
+          socialt ansvar, samtidig med at vi giver jeres tøj nyt liv og længere
+          levetid.
+        </p>
+        <p>
+          Vores dygtige team, bestående af to erfarne syersker og en kreativ
+          designer, som står klar til at hjælpe med alt fra reparation og
+          tilpasning til fornyelse af tøj. Vi tilbyder en bred vifte af
+          services, herunder oplægning, lynlåsreparation, lappning af huller og
+          broderi.
+        </p>
+        <p>
+          Vi bringer vores let tilgængelige service direkte til din virksomhed i
+          Københavnsområdet. Sammen kan vi finde den perfekte dag, der passer
+          til jeres kalender, hvor I kan aflevere tøjet om morgenen. Vi lægger
+          stor vægt på kvalitet og omhu i vores arbejde og stræber altid efter
+          at fuldføre reparationerne inden dagen er omme.
+        </p>
         <div class="knapper">
-          <Buttons class="knap" variant="primary" size="size"> <a href="https://www.itmv.dk/pages/repair-service" class="button">Repair Service</a></Buttons>
-          <Buttons class="knap" variant="primary" size="size"><a href="https://www.itmv.dk/pages/donation" class="button">Støt Os</a></Buttons>
+          <a href="https://www.itmv.dk/pages/repair-service" class="button"
+            >Repair Service</a
+          >
+
+          <a href="https://www.itmv.dk/pages/donation" class="button">Støt Os</a
+          >
         </div>
       </div>
     </div>
@@ -23,6 +53,62 @@ import Buttons from "/src/componets/Buttons.astro";
 </div>
 
 <style>
+  /********* Knapper **********/
+  .knapper {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+    color: #3e5c6d;
+  }
+
+  a:hover {
+    color: #fff;
+    background-color: #3e5c6d;
+  }
+  .button {
+    padding: 7px 9px;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: bold;
+    width: 111px;
+    border-radius: 5px;
+    border-width: 4px;
+    border-style: solid;
+  }
+
+  @media (min-width: 800px) {
+    .button {
+      padding: 10px 20px;
+      cursor: pointer;
+      font-family: Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: bold;
+      width: 145px;
+      border-radius: 5px;
+      border-width: 4px;
+      border-style: solid;
+    }
+  }
+
+  a {
+    text-align: center;
+    color: #3e5c6d;
+    border-color: #3e5c6d;
+  }
+
+  iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
   .saks_container {
     width: 200px;
     height: 100px;
@@ -70,20 +156,6 @@ import Buttons from "/src/componets/Buttons.astro";
   .stof_col p,
   h1 {
     padding: 1px 10px;
-  }
-  /********* Knapper **********/
-  .knapper {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  a {
-    text-decoration: none;
-    color: #3e5c6d;
-  }
-
-  a:hover {
-    color: #fff;
   }
 
   @media (min-width: 800px) {
