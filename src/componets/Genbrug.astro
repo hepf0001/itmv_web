@@ -30,7 +30,7 @@
 </div>
 <style>
   .col {
-    height: 125vh;
+    height: 130vh;
     position: relative;
   }
   .woman_container {
@@ -41,24 +41,22 @@
     left: 0;
   }
   .woman_sprite {
-    background-image: url("/public/Img/foerste_section.svg");
+    background-image: url("/public/Img/foerste_section_mobil.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 106%;
+    height: 116%;
     position: relative;
   }
 
   .stof_col {
     height: 100%;
-    padding: 1px 55px;
+    padding: 42% 42px;
   }
 
   @media (min-width: 800px) {
-    .background_sprite {
-      background-image: url("/public/Img/foerste_section.svg");
-      width: 100%;
-      height: 100%;
+    .woman_sprite {
+      background-image: url("../../public/Img/foerste_section_desktop.svg");
     }
 
     .stof_col {
@@ -70,52 +68,4 @@
       height: 120vh;
     }
   }
-
-  /* .col {
-    display: flex;
-    align-items: flex-end;
-    height: 100vh;
-    padding-bottom: 100px;
-  }
-  .woman_col {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-  .woman_sprite {
-    background-image: url("/public/Img/foerste_section_800.svg");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  .stof_col {
-    z-index: 1;
-    padding: 20px;
-  }
-  .stof_col {
-  }
-
-  @media (min-width: 800px) {
-    .woman_sprite {
-      background-image: url("/public/Img/foerste_section.svg");
-      background-image: contain;
-      height: 105%;
-    }
-    .col {
-      height: 105vh;
-    }
-  }
-
-  @media (max-width: 376px) {
-    .col {
-      height: 115vh;
-    }
-
-    .woman_sprite {
-      height: 100%;
-    }
-  } */
 </style>
