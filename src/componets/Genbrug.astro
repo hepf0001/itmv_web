@@ -3,68 +3,69 @@
 ---
 
 <div class="col">
-  <div class="woman_col">
-    <div class="woman_sprite"></div>
-  </div>
-
-  <div class="stof_col">
-    <h1>I tråd med Genbrug</h1>
-    <p>
-      I vores rejse mod en mere bæredygtig fremtid hos I Tråd Med Verden, tror vi på kraften af samarbejde og genanvendelse. Vores samarbejde med KAB er ikke kun et partnerskab; det er et symbol på vores engagement i at skabe meningsfulde forandringer. Ved at genanvende tekstiler fra virksomheder i København og omegn viser vi ikke blot vores
-      dedikation til bæredygtighed, men også vores evne til at forvandle ressourcer til nye muligheder.
-    </p>
-    <p>
-      Vi er mere end bare en virksomhed - vi er en bevægelse, der driver sociale, økonomiske og miljømæssige forandringer lokalt. Gennem vores arbejde ønsker vi ikke kun at reducere tekstil affald, men også at skabe jobmuligheder og styrke fællesskaber. Ved at bygge bro mellem virksomheder, lokalsamfund og vores eget håndværk, træder vi sammen mod
-      en fremtid, der er bæredygtig for os alle.
-    </p>
+  <div class="woman_container">
+    <div class="woman_sprite">
+      <div class="stof_col">
+        <h1>I tråd med Genbrug</h1>
+        <p>
+          I vores rejse mod en mere bæredygtig fremtid hos I Tråd Med Verden,
+          tror vi på kraften af samarbejde og genanvendelse. Vores samarbejde
+          med KAB er ikke kun et partnerskab; det er et symbol på vores
+          engagement i at skabe meningsfulde forandringer. Ved at genanvende
+          tekstiler fra virksomheder i København og omegn viser vi ikke blot
+          vores dedikation til bæredygtighed, men også vores evne til at
+          forvandle ressourcer til nye muligheder.
+        </p>
+        <p>
+          Vi er mere end bare en virksomhed - vi er en bevægelse, der driver
+          sociale, økonomiske og miljømæssige forandringer lokalt. Gennem vores
+          arbejde ønsker vi ikke kun at reducere tekstil affald, men også at
+          skabe jobmuligheder og styrke fællesskaber. Ved at bygge bro mellem
+          virksomheder, lokalsamfund og vores eget håndværk, træder vi sammen
+          mod en fremtid, der er bæredygtig for os alle.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 <style>
   .col {
-    display: flex;
-    align-items: flex-end;
-    height: 100vh;
-    padding-bottom: 100px;
+    height: 130vh;
+    position: relative;
   }
-  .woman_col {
+  .woman_container {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
   }
   .woman_sprite {
-    background-image: url("/public/Img/foerste_section_800.svg");
-    background-size: cover;
+    background-image: url("/public/Img/foerste_section_mobil.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 116%;
+    position: relative;
   }
 
   .stof_col {
-    z-index: 1;
-    padding: 20px;
-  }
-  .stof_col {
+    height: 100%;
+    padding: 42% 42px;
   }
 
   @media (min-width: 800px) {
     .woman_sprite {
-      background-image: url("/public/Img/foerste_section.svg");
-      background-image: contain;
-      height: 105%;
-    }
-    .col {
-      height: 105vh;
-    }
-  }
-
-  @media (max-width: 376px) {
-    .col {
-      height: 115vh;
+      background-image: url("../../public/Img/foerste_section_desktop.svg");
     }
 
-    .woman_sprite {
+    .stof_col {
       height: 100%;
+      padding: 43% 120px 0 120px;
+    }
+
+    .col {
+      height: 120vh;
     }
   }
 </style>
