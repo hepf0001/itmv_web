@@ -1,11 +1,10 @@
 ---
-import Buttons from "/src/componets/Buttons.astro";
+
 ---
 
-<div class="saks_container"><div class="saks"></div></div>
 <div class="col">
-  <div class="woman_col">
-    <div class="woman_sprite">
+  <div class="stof_container">
+    <div class="stof_sprite">
       <div class="stof_col">
         <div class="video_container">
           <iframe
@@ -48,6 +47,7 @@ import Buttons from "/src/componets/Buttons.astro";
           <a href="https://www.itmv.dk/pages/donation" class="button">Støt Os</a
           >
         </div>
+        <div class="saks_container"><div class="saks"></div></div>
       </div>
     </div>
   </div>
@@ -120,40 +120,35 @@ import Buttons from "/src/componets/Buttons.astro";
   .video_container {
     padding: 10px;
   }
-
   .saks_container {
     width: 200px;
     height: 100px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
   }
-
   .saks {
     width: 100%;
-    height: 100%;
+    height: 93%;
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 10;
     background-image: url("../../public/img/img_svg/saks.svg");
   }
 
-  .bund {
-    position: absolute;
-    bottom: 50%;
-  }
-
   .col {
     height: 100vh;
-    padding-bottom: 70%;
     position: relative;
   }
-  .woman_col {
+  .stof_container {
     width: 100%;
     height: 120%;
     position: absolute;
     top: 0;
     left: 0;
   }
-  .woman_sprite {
-    background-image: url("/public/img/sidste_stof_mobil.svg");
+  .stof_sprite {
+    background-image: url("/public/img/img_svg/sidste_stof_mobil.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -162,7 +157,7 @@ import Buttons from "/src/componets/Buttons.astro";
 
   .stof_col {
     z-index: 1;
-    height: 120%;
+    height: 100%;
   }
 
   .stof_col p,
@@ -171,13 +166,13 @@ import Buttons from "/src/componets/Buttons.astro";
   }
 
   @media (min-width: 800px) {
-    .woman_sprite {
-      background-image: url("/public/img/sidste_stof.svg");
+    .stof_sprite {
+      background-image: url("/public/img/img_svg/sidste_stof.svg");
+      height: 150%;
     }
 
     .col {
       height: 100vh;
-      padding-bottom: 50%;
     }
 
     .stof_col p,
@@ -187,6 +182,13 @@ import Buttons from "/src/componets/Buttons.astro";
 
     .video_container {
       padding: 45px;
+    }
+
+    .saks {
+      width: 149%;
+      height: 140%;
+      bottom: -38%;
+      right: 5%;
     }
   }
 </style>

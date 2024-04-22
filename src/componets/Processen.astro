@@ -40,7 +40,7 @@
     display: flex;
     align-items: flex-end;
     height: 100vh;
-    padding-bottom: 30%;
+
     position: relative;
   }
   .background_container {
@@ -51,11 +51,11 @@
     left: 0;
   }
   .background_sprite {
-    background-image: url("/public/img/flere_stof_mobil.svg");
+    background-image: url("/public/img/img_svg/flere_stof_mobil.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 125%;
     position: relative;
   }
 
@@ -67,10 +67,10 @@
   .naalepude {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 24%;
+    width: 45%;
     height: 15%;
     position: absolute;
-    bottom: 0%;
+    bottom: -5%;
     right: 0%;
     background-image: url(../../public/img/img_svg/naalepude.svg);
   }
@@ -81,7 +81,7 @@
 
   @media (min-width: 800px) {
     .background_sprite {
-      background-image: url("/public/img/flere_stof.svg");
+      background-image: url("/public/img/img_svg/flere_stof.svg");
       width: 100%;
       height: 120%;
     }
@@ -93,7 +93,14 @@
 
     .col {
       height: 90vh;
-      padding-bottom: 0%;
+    }
+
+    .naalepude {
+      width: 30%;
+      height: 29%;
+      position: absolute;
+      bottom: -15%;
+      right: 0%;
     }
   }
 </style>
