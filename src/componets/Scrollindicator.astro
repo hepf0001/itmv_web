@@ -9,8 +9,11 @@
   };
 
   function myFunction() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.height = scrolled + "%";
   }
@@ -37,7 +40,7 @@
     height: 100vh;
     width: 15px;
 
-    background-image: url("../../public/img/img_svg/rollebaand_mobil.svg");
+    background-image: url("/img/img_svg/rollebaand_mobil.svg");
     background-image: cover;
   }
 
@@ -57,7 +60,7 @@
     .progress-container {
       width: 35px;
 
-      background-image: url("../../public/img/img_svg/rollebaand.svg");
+      background-image: url("/img/img_svg/rollebaand.svg");
       background-image: cover;
     }
 
