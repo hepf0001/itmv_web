@@ -10,21 +10,20 @@
 
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".saks_container_2",
-      start: "top 90%", //
+      trigger: ".saks_container",
+      start: "top 90%",
       end: "bottom end",
-      scrub: true, //
-      markers: true,
+      scrub: true,
     },
   });
 
-  tl.from(".saks_container_2", {
-    x: 900,
+  tl.from(".saks_container", {
+    x: 500,
     y: -200,
     rotation: 30,
   });
 </script>
-<div class="saks_container_2"><div class="saks"></div></div>
+<div class="saks_container"><div class="saks"></div></div>
 
 <div class="col"></div>
 <img class="stof" src="/img/img_svg/stofrolle.svg" alt="Tøm stofrolle" />
@@ -40,9 +39,12 @@
   .rolle {
     width: 100%;
   }
-  .saks_container_2 {
-    width: 200px;
-    height: 100px;
+  .saks_container {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    bottom: 100px;
+    pointer-events: none;
   }
   .saks {
     width: 100%;
