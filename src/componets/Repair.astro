@@ -3,24 +3,24 @@
 ---
 
 <div class="col">
-  <div class="stof_container">
-    <div class="stof_sprite">
-      <div class="tekst_col">
-        <div class="video_container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/UkWfnKbGLg4?si=BYpnJ10WfIA4B-1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h1>Repair Service</h1>
-        <p>Vidste du, at I Tråd Med Verden tilbyder en praktisk Repair Service, direkte til din virksomhed? Vi brænder for at gøre det så nemt som muligt for dine medarbejdere at deltage i bæredygtighedsarbejdet og socialt ansvar, samtidig med at vi giver jeres tøj nyt liv og længere levetid.</p>
-        <p>Vores dygtige team, bestående af to erfarne syersker og en kreativ designer, som står klar til at hjælpe med alt fra reparation og tilpasning til fornyelse af tøj. Vi tilbyder en bred vifte af services, herunder oplægning, lynlåsreparation, lappning af huller og broderi.</p>
-        <p>Vi bringer vores let tilgængelige service direkte til din virksomhed i Københavnsområdet. Sammen kan vi finde den perfekte dag, der passer til jeres kalender, hvor I kan aflevere tøjet om morgenen. Vi lægger stor vægt på kvalitet og omhu i vores arbejde og stræber altid efter at fuldføre reparationerne inden dagen er omme.</p>
-        <div class="knapper">
-          <a href="https://www.itmv.dk/pages/repair-service" class="button">Repair Service</a>
-
-          <a href="https://www.itmv.dk/pages/donation" class="button">Støt Os</a>
-        </div>
-        <div class="saks_container"><div class="saks"></div></div>
-      </div>
+  <!--<div class="stof_container">
+    <div class="stof_sprite">-->
+  <div class="tekst_col">
+    <div class="video_container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UkWfnKbGLg4?si=BYpnJ10WfIA4B-1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    <h1>Repair Service</h1>
+    <p>Vidste du, at I Tråd Med Verden tilbyder en praktisk Repair Service, direkte til din virksomhed? Vi brænder for at gøre det så nemt som muligt for dine medarbejdere at deltage i bæredygtighedsarbejdet og socialt ansvar, samtidig med at vi giver jeres tøj nyt liv og længere levetid.</p>
+    <p>Vores dygtige team, bestående af to erfarne syersker og en kreativ designer, som står klar til at hjælpe med alt fra reparation og tilpasning til fornyelse af tøj. Vi tilbyder en bred vifte af services, herunder oplægning, lynlåsreparation, lappning af huller og broderi.</p>
+    <p>Vi bringer vores let tilgængelige service direkte til din virksomhed i Københavnsområdet. Sammen kan vi finde den perfekte dag, der passer til jeres kalender, hvor I kan aflevere tøjet om morgenen. Vi lægger stor vægt på kvalitet og omhu i vores arbejde og stræber altid efter at fuldføre reparationerne inden dagen er omme.</p>
+    <div class="knapper">
+      <a href="https://www.itmv.dk/pages/repair-service" class="button">Repair Service</a>
+
+      <a href="https://www.itmv.dk/pages/donation" class="button">Støt Os</a>
+    </div>
+    <div class="saks_container"><div class="saks"></div></div>
+    <!--</div>
+    </div>-->
   </div>
 </div>
 
@@ -110,10 +110,14 @@
   .col {
     min-height: 100vh;
     position: relative;
+    background-image: url("/img/img_svg/sidste_stof_mobil.svg");
+    background-size: cover;
+    padding: 0 50px 0 0;
   }
   .stof_container {
     width: 100%;
-    height: 120%;
+    /*height: 120%;*/
+    height: 100%;
   }
   .stof_sprite {
     background-image: url("/img/img_svg/sidste_stof_mobil.svg");
@@ -136,11 +140,15 @@
   @media (min-width: 800px) {
     .stof_sprite {
       background-image: url("/img/img_svg/sidste_stof.svg");
-      height: 150%;
+      /*height: 150%;*/
+      height: 100%;
     }
 
     .col {
-      height: 100vh;
+      /*height: 100vh;*/
+      min-width: 100%;
+      min-height: 100%;
+      background-image: url("/img/img_svg/sidste_stof.svg");
     }
 
     .tekst_col p,
